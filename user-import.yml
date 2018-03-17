@@ -1,0 +1,31 @@
+id: users
+label: 'Users'
+source:
+  plugin: users
+  key: migrate
+process:
+  name: paypal_email (Email, username, whatever?)
+  roles: role (Composer, influencer)
+  field_first_name: first_name (Text - plain)
+  field_last_name: last_name (Text - plain)
+  user_picture: composer_picture (Image)
+  field_address: address (Address)
+  field_paypal_email_address: paypal_email (Email)
+  field_facebook_link: facebook_link (Link)
+  field_twitter_link: twitter_link (Link)
+  field_google_link: google_plus_link (Link)
+  field_soundcloud_link: soundcloud_link (Link)
+  field_youtube_link: youtube_link (Link)
+  field_influencer_picture: influencer_picture (Image)
+  field_influencer_bio: influencer_bio (Text - formatted, long)
+  field_influencer_display_title: influencer_display_title (Text - plain)
+  field_short_bio: short_bio (Text - formatted, long)
+  field_tell_us_about_your_most_re: tell_us_about_your_most_recent_performances (Text - plain)
+  field_do_you_have_any_formal_tra: do_you_have_any_formal_training_in_composition (Text - plain)
+  field_is_there_a_place_where_we_: is_there_a_place_we_can_listen_to_your_music (Text - plain)
+  field_please_provide_us_with_any: please_provide_other_relevant_links_about_you_and_your_work (link)
+  field_which_musicspoke_composer_: which_composers_recommended_you (Text - plain)
+  field_what_pieces_do_you_have_wi: what_pieces_do_you_have_with_traditional_publishers (Text - plain)
+destination:
+  plugin: 'entity:user'
+  default_bundle: user

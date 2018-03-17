@@ -1,0 +1,16 @@
+id: product_variations
+label: 'Product Variations'
+source:
+  plugin: product_variations
+  key: migrate
+process:
+  field_variation_title: variation_title (Text - plain)
+  field_score_tags: score_tags (Field Collection - taxonomy references)
+  field_variation_youtube_video: variation_youtube_video (Video Embed)
+  field_variation_soundcloud: variation_soundcloud (SoundCloud)
+  sku: variation_sku (Textfield)
+  field_score_issuu_embed: issuu_embed (Text - formatted long)
+  field_variation_score_file: variation_score_file (File)
+destination:
+  plugin: 'entity:product_variation'
+  default_bundle: default

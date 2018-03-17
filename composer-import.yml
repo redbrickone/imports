@@ -1,0 +1,22 @@
+id: composers
+label: 'Composers'
+source:
+  plugin: composers
+  key: migrate
+process:
+  name: paypal_email
+  roles: composer
+  field_first_name: first_name
+  field_last_name: last_name
+  user_picture: composer_picture
+  field_address: address
+  field_paypal_email_address: paypal_email
+  field_facebook_link: facebook_link
+  field_twitter_link: twitter_link
+  field_google_link: google_link
+  field_soundcloud_link: soundcloud_link
+  field_youtube_link: youtube_link
+  field_short_bio: short_bio
+destination:
+  plugin: 'entity:user'
+  default_bundle: user

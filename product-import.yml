@@ -1,0 +1,20 @@
+id: products
+label: 'Products'
+source:
+  plugin: products
+  key: migrate
+process:
+  title: title (Text - plain)
+  body: about_the_score (Text -formatted, long with summary)
+  field_duration: duration (Taxonomy reference)
+  field_score_categories: score_category (Taxonomy Reference)
+  field_about_the_score_2: long_description (Text - formatted long)
+  field_musicspoke_commission_spli: ms_commission (entity reference (default 30))
+  field_user_commission_split: users_commission (entity reference - CommissionSplitEntity - default 70 for author of score)
+  field_teaser_image: score_teaser_image (Image)
+  variations: variations (Entity Reference - will figure this out
+  stores: store (shouldn't need to fill this)
+destination:
+  plugin: 'entity:product'
+  default_bundle: score
+

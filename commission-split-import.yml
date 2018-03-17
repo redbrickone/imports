@@ -1,0 +1,12 @@
+id: commission_split_entities
+label: 'Commission Split Entities'
+source:
+  plugin: commission_split_entities
+  key: migrate
+process:
+  field_commission_percentage: commission_percentage (Number - integer)
+  field_type_of_user: type_of_user (Taxonomy Reference - influencer, composer, poet, etc)
+  field_user: user_to_get_commission (Entity Reference - MS user or author of the score
+destination:
+  plugin: 'entity:commission_split_entity'
+  default_bundle: commission_split_entity
